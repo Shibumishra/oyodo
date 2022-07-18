@@ -1,38 +1,112 @@
-.App {
+.navbar {
+  background-color: #0f2438 !important;
+}
+
+.navbar .css-hyum1k-MuiToolbar-root {
+  justify-content: space-around !important;
+}
+
+.navbar button{
+  background: none;
+}
+
+.info-name {
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info-name h3 {
+  height: 0px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info-name span {
+  padding: 0px 25px;
+  height: 0px;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 7px;
+  width: 92%;
+}
+
+label {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #5f686c;
+  font-weight: 600;
+}
+
+
+
+.separator {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.separator .line {
+  height: 3px;
+  flex: 1;
+  background-color: rgb(184, 184, 184);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.separator h1 {
+  padding: 0 2rem;
+}
+
+.more-series {
+  display: flex;
+  margin: 10px 0;
+}
+
+.more-series img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  overflow: hidden;
+}
+
+.more-series-text {
+  margin: 0 20px;
+}
+
+.more-series-text h1 {
+  margin: 0;
+  padding: 0;
+  color: #08c9c9;
+  font-size: 35px;
+}
+
+.more-series-text p {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+
+@media (max-width: 480px) {
+  .card_cont {
+    width: 90%;
+    margin: 20px 0 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media (max-width: 630px) {
+  .card_cont {
+    width: 90%;
+    margin: 20px 0 0 10px;
   }
 }
